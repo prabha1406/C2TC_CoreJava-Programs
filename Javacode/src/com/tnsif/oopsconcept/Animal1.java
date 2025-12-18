@@ -98,21 +98,27 @@ class Science extends Subject{
  */
 
 interface A{
+	void methodA();
 	
 }
 
 interface B{
+	void methodB();
 	
 }
 
-class C extends A,B
-{
-
-	
+class C implements A,B{
+	public void methodA() {
+		System.out.println("Method from Interface");
+	}
+	public void methodB() {
+        System.out.println("Method from Interface B");
+    }
 }
 
 
-public class InheritanceDemo {
+
+class InheritanceDemo {
 
 	public static void main(String[] args) {// TODO Auto-generated method stub
 
