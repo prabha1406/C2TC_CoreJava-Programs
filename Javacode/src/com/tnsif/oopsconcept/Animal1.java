@@ -107,6 +107,7 @@ interface B{
 
 class C extends A,B
 {
+
 	
 }
 
